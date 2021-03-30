@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Paython
-permalink: 'categories/Paython'
+title: Python
+permalink: 'categories/Python'
 ---

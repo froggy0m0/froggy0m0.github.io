@@ -1,0 +1,15 @@
+<div>
+  <div class="sidebar-nav-item">Python</div>
+  <nav class="content-ul">
+    {% for category in site.categories %}
+      {% if category[0] == "Python" %}
+        class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                {{ category | first }}
+                            </span>
+        <span class="badge">{{ category | last | size }}</span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>
