@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Category
-category_dir: category/
+category_dir: categories/
 
 
 # Build settings
