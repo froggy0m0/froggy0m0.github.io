@@ -1,6 +1,6 @@
 ---
 layout: category
-title: GitHub Page
+title: GitHubPage
 permalink: 'categories/GitHubPage'
 ---
 
