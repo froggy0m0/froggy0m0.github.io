@@ -2,8 +2,9 @@
   <div class="sidebar-nav-item">Python</div>
   <nav class="content-ul">
     {% for category in site.categories %}
-      {% if category[0] == "Python" %}
-      <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}"
+      {% if category[0] == "Python" or
+            category[0] == "GitHubPage"%}
+      <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
         class="sidebar-nav-item pl-3rem">
                             <span class="name">
                                 {{ category | first }}
