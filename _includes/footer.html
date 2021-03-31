@@ -1,0 +1,18 @@
+<style>
+  #p1 { font-family: "Verdana"; font-size: 15px; font-style: italic}
+  #p2 { font-family: "Garamond"}
+</style>
+
+<footer>
+  <hr/>
+  {% if site.copyright.size > 0 %}
+  <center id='p1'>
+    {{ site.copyright | markdownify }}
+  </center>
+  {% endif %}
+  <p>
+  <center>
+    <code id='p2'>Powered by <a href={{ site.url }}>{{ site.title }}</a></code>
+  </center>  
+</p>
+</footer>
