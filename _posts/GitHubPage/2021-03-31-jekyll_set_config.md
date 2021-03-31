@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll 디렉터리 구조와 기본설정
+title: Jekyll 디렉터리 구조와 기본설정
 categories: GitHubPage
 ---
 
