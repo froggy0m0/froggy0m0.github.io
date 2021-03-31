@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://run-giraffe.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:
-copyright: '&copy; 2021-2021 ~~think~~ ~~difference~~'
+copyright: '&copy; 2021-2021 ~~Run~~ ~~Giraffe~~'
 
 # Category
 category_dir: categories/
