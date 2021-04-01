@@ -328,10 +328,12 @@ a.sidebar-nav-item:focus {
   color: #303030;
 }
 
-.page-title,
+.page-title {
+  font-family: 'Noto Serif KR', serif;
+}
 .post-title {
   margin-top: 0;
-  font-family: 'Stylish', sans-serif;
+  font-family: 'Noto Serif KR', serif;
 }
 
 /* Meta data line below post title */
