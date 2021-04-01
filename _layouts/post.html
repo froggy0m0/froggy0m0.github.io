@@ -11,12 +11,11 @@ layout: default
 </div>
 
 <!-- 하단 양해 메시지 출력... ㅎㅎ-->
-{% if page.title.size > 0 %}
-  <header class ="font-sorry">
-    {% include post_sorry.html text=site.sorry %}
+  
+  <header class ="font-message">
+    {{ site.message }}
   </header>
-  <hr class="sr-only"/>
-{% endif %}
+
 
 <!-- related post
 {% if site.related_posts.size >= 1 %}
