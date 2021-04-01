@@ -6,7 +6,17 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="font-date">Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
   {{ content }}
+  <br></br>
+  <hr>
 </div>
+
+<!-- 하단 양해 메시지 출력... ㅎㅎ-->
+{% if page.title.size > 0 %}
+  <header class ="font-sorry">
+    {% include post_sorry.html text=site.sorry %}
+  </header>
+  <hr class="sr-only"/>
+{% endif %}
 
 <!-- related post
 {% if site.related_posts.size >= 1 %}
