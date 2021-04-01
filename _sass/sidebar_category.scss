@@ -16,6 +16,18 @@
   padding-left: 3rem;
 }
 
-.category-name {
+.sub-category-name {
   padding-left: 2rem;
+  font-family: Georgia, Serif;
+}
+
+.main-category-name {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-left: 2rem;
+  font-family: Georgia, Serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
