@@ -1,0 +1,44 @@
+
+/* sidebar 레이아웃 */
+
+.badge {
+  display: block;
+  float: right;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 3px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #000;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.pl-3rem {
+  padding-left: 3rem;
+}
+
+.sub-category-name {
+  padding-left: 2rem;
+  font-family: Georgia, Serif;
+}
+
+.main-category-name {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-left: 2rem;
+  font-family: Georgia, Serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/*날짜 폰트*/
+
+.font-date {
+  color: #9a9a9a;
+  font-size: 14px;
+  font-family: 'Jua', serif;
+}
