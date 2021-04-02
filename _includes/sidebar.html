@@ -9,6 +9,7 @@
          <p>{{ site.description }}</p>
        </div>
      
+      <!-- 뭔지모르겠다 ...
        <nav class="sidebar-nav">
          <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
      
@@ -27,10 +28,10 @@
          {% endfor %}
      
        </nav>
-
+      -->
+      
        <!-- 카테고리 리스트 include 부분 -->
-       {% include sidebar_main_category_codingtest.html %}
-       {% include sidebar_main_category_etc.html %}
+       {% include sidebar_category.html %}
        <!-- author include 부분 -->
        {% include sidebar_author.html %}
        <!-- copyright
