@@ -3,11 +3,9 @@ layout: default
 ---
 
 <div class="font-Noto_Serif_KR">
-  <h2 class="page-title">{{ page.title }}</h2>
-    <span>
-      <hr></hr>
-      <img class = "me" src="{{ site.url }}{{ site.author.avatar }}" align="left"/>
-      <p class="home-message">{{ site.description }}</p></br></br>
-    </span>
-  {{ content }}
+  <span>
+    <img class = "me" src="{{ site.url }}{{ site.author.avatar }}" align="left"/>
+    <p class="home-message">{{ site.description }}</p></br></br>
+  </span>
+{{ content }}
 </div>
