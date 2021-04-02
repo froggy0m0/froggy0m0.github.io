@@ -8,8 +8,8 @@ title: About
 
 
 
-<p class="message">
-  Hi :()
-abc
+<p class="home-message">
+  안녕하세요 ~
+</p>
 
-a
+
