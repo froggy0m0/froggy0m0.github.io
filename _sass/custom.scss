@@ -38,7 +38,6 @@
 }
 
 /*날짜 폰트*/
-
 .font-date {
   //display: block;
   margin-top: -.5rem;
@@ -48,6 +47,7 @@
   font-family: 'Jua', serif;
 }
 
+//머지?
 .font-basic {
   margin-top: -.5rem;
   margin-bottom: 1rem;
@@ -55,13 +55,27 @@
   font-family: 'Noto Serif KR', serif;
 }
 
+//sorry 메시지폰트
 .font-message {
   font-size: 30px;
   font-family: 'Nanum Pen Script', serif;
 }
 
-.font-content {
+//기본폰트
+.font-content {    
   font-family: 'Noto Serif KR', serif;
+}
+
+// copyright 1
+#p1 {
+  font-family: "Verdana";
+  font-size: 15px;
+  font-style: italic
+}
+
+// copyright 2
+#p2 {
+  font-family: "Garamond"
 }
 
 /*icon?*/
