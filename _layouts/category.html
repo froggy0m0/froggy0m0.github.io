@@ -5,8 +5,8 @@ layout: default
 <!-- 상단레이아웃 카테고리 타이틀과 about 작성-->
 {% if page.title.size > 0 %}
   <header class ="page-title">
-    <h1 class="page-title">{{ page.title }}</h1>
-    {% include category_about.html text=page.description %}
+    <h1 class="page-title">{{ page.title }}</h1></br>
+    {% include category_about.html text=page.description %}<hr></hr>
   </header>
   <hr class="sr-only"/>
 {% endif %}
