@@ -59,5 +59,7 @@ ex) `_sass/` 디렉토리에 `abc.scss` `test.scss` 를 생성했다면 `css/sty
 
 
 
-REFERENCE : [KGMYH TUTORIAL BLOG](https://kgmyh.github.io/blog/2017/12/23/Jekyll_Using_Sass/)
+<br>
+
+REFERENCE : <https://kgmyh.github.io/blog/2017/12/23/Jekyll_Using_Sass/>
 
