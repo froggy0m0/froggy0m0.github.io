@@ -145,8 +145,3 @@ __추가로__
 `sidebar.html` 에 작성해도 되지만 분류 수정하기 쉽게 따로`sidear_category_list.html`  에 작성하였다.
 
 기존 `sidebar.html`에 include 하였다 
-
-
-
----
-
