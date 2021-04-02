@@ -11,7 +11,7 @@ Jekyll을 사용한 github page 제작하기
 
 아래 그림과같이 Repositories name 에 username.github.io 형태로 입력해주세요
 
-### <img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-03-31-jekyll_make_git_pages-1.jpg" width="600" height="300"> 
+### <img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-03-31-jekyll_make_git_pages-1.png" width="600" height="300"> 
 
 다음 Set up in Desktop을 통해서 Clone하고 Clone해준 경로에 미리 받아놓은 테마파일을 붙여넣기한후 Ruby를 통해   `chcp65001` 실행
 
@@ -40,7 +40,7 @@ C:\Run-Giraffe.github.io>bundle exec jekyll serve
 
 `http://127.0.0.1:4000/`로이동하여 작동을 확인해줍니다.
 
-<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-03-31-jekyll_make_git_pages-2.jpg" width="600" height="300"> 다음으로 Github DeskTop을 통하여 원격저장소에 저장을 합니다.
+<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-03-31-jekyll_make_git_pages-2.png" width="600" height="300"> 다음으로 Github DeskTop을 통하여 원격저장소에 저장을 합니다.
 
 
 
