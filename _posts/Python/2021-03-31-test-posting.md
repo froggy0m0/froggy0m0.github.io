@@ -4,7 +4,9 @@ title: Python
 categories: Python
 ---
 
-first posting haha :()
-
-__first posting haha :()__
+```
+int a =10;
+a += 1;
+(: message)
+```
 
