@@ -20,7 +20,7 @@
 
 title: Run Giraffe 🦒
 email: your-email@example.com
-description: 🦒 Run Giraffe :()
+description: 안녕하세요 공부하는 블로그입니다 Run Giraffe :()
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://run-giraffe.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
