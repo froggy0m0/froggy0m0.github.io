@@ -42,7 +42,8 @@ author:
 # Category
 category_dir: categories/
 
-background: "/assets/img/background.jpg"
+background_img: "/assets/img/background.jpg"
+sidebar_img : "/assets/img/sidebar.jpg"
 
 # Build settings
 theme: minima
