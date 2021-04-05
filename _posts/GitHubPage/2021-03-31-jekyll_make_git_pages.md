@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll을 사용한 github page 제작하기
+title: Jekyll GitHub Page 제작하기
 categories: GitHubPage
 
 ---
