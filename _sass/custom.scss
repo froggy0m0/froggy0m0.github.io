@@ -55,7 +55,7 @@
   font-family: 'Noto Serif KR', serif;
 }
 
-//sorry 메시지폰트
+//sorry 메시지폰트  하단
 .font-message {
   font-size: 30px;
   font-family: 'Nanum Pen Script', serif;
@@ -71,6 +71,15 @@
   font-family: 'Nanum Pen Script', serif;
 }
 
+//포스트 상단 메시지
+.post-message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9;
+  font-size: 20px;
+  font-family: 'Jua', serif;
+}
 
 //기본폰트
 .font-Noto_Serif_KR {
