@@ -5,6 +5,10 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="font-date">📅 Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
+  <center class ="font-message">
+    {{ page.message }}
+  </center>
+  <hr>
   <span class="font-Noto_Serif_KR">{{ content }}</span>
 </div>
 
