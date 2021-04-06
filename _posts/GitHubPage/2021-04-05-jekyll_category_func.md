@@ -8,7 +8,7 @@ message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이
 
 ## 1. 페이지 제목정렬
 
-<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png"> 
+<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png" width="600" height="300"> 
 
 ```html
 {% raw %}
