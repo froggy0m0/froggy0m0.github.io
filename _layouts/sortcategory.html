@@ -11,10 +11,11 @@ layout: default
   <hr class="sr-only"/>
 {% endif %}
 
+
 <ul class="posts-list">
-  
-  {% assign category = page.sortcategory | default: page.title %}
-  {% assign sort_page = site.categories[category] | sort: "title" %}
+  <p>{{page.title}}</p>
+  {% assign sort_pages = site.categories[page.title] %}
+  {% assign sort_page = sort_pages | sort: 'title' %}
   {% for post in sort_page %}
     <li>
       <h3>
