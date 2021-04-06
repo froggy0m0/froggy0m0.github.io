@@ -13,14 +13,16 @@ layout: default
 
 <ul class="posts-list">
   
-  {% assign sort_page = site.categories[page.title] %}
+  {% assign category = page.category | default: page.title %}
+  {% assign sort_page = site.categories[category] | sort: "title" %}
   {% for post in sort_page %}
     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>
-        <small class="font-date">{{ post.date | date : "%Y.%m.%d" }}</small>
+        <small class="font-date">
+            {{ post.date | date : "%Y.%m.%d" }}</small>
       </h3>
     </li>
   {% endfor %}
