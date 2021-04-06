@@ -8,7 +8,7 @@ message: 해당 페이지에대한 간략한 설명과 날짜순으로 정렬된
 
 ## 1. 페이지 제목정렬
 
-<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png" width="600" height="300"> 
+<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png"> 
 
 ```html
 <ul class="posts-list">
