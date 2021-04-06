@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 가자가자
+title: ⭐⭐Python
 categories: Programmers
 ---
 
