@@ -12,7 +12,9 @@ layout: default
 {% endif %}
 
 <ul class="posts-list">
-  {% assign sort_page = site.categories[page.title] | sort: post.title %}
+  
+  {% assign category = page.category | default: page.title %}
+  {% assign sort_page = site.categories[category] | sort: page.title %}
   {% for post in sort_page %}
     <li>
       <h3>
