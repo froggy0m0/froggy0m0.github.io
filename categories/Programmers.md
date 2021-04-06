@@ -1,8 +1,9 @@
 ---
-layout: sortcategory
+layout: category
 title: Programmers
 permalink: 'categories/Programmers'
 description: >
   Programmers~
+order: title
 ---
 
