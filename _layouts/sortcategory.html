@@ -12,7 +12,8 @@ layout: default
 {% endif %}
 
 <ul class="posts-list">
-  
+  <p>{{ page.title }}</p>
+  <p>{{ page.title }}</p>
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
     <li>
