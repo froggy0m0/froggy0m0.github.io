@@ -12,9 +12,13 @@ layout: default
 {% endif %}
 
 <ul class="posts-list">
-  
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
+  {% if page.order %}
+    {% assign sort_page = site.categories[page.title] | sort: page.order %}
+  {% else %}
+    {% assign sort_page = site.categories[page.title] %} 
+  {% endif %}
+
+  {% for post in sort_page %}
     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
