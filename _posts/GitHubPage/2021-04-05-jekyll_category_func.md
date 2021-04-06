@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll 카테고리기능(제목정렬, 페이지설명)
 categories: GitHubPage
-message: 해당 페이지에대한 간략한 설명과 날짜순으로 정렬된 페이지들을 제목정렬해보았다.
+message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이지에대한 간략한 설명을 추가했다.
 
 ---
 
