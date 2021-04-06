@@ -8,7 +8,7 @@ message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이
 
 ## 1. 페이지 제목정렬
 
-<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png" width="600" height="300"> 
+<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png"> 
 
 ```html
 {% raw %}
@@ -38,7 +38,7 @@ message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이
 
 이후에 날짜로 정렬되는 포스팅들을 for문 바로위에
 
-`{ assign sort_page = site.categories[category] | sort: "title" }` 
+`{% raw %}{% assign sort_page = site.categories[category] | sort: "title" %}{% endraw %}` 
 
 문장을넣어 title을 넣어 title로 정렬을하고
 
