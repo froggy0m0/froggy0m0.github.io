@@ -1,5 +1,5 @@
 ---
-layout: sort_category
+layout: category
 title: Programmers
 permalink: 'categories/Programmers'
 description: >
