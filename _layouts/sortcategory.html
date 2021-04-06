@@ -13,8 +13,9 @@ layout: default
 
 <ul class="posts-list">
   
-  {% assign category = page.category | default: page.title%}
-  {% for post in site.categories[category]   | sort: "title" %}
+  {% assign category = page.category | default: page.title %}
+  {% assign sort_page = site.categories[category] | sort: "title" %}
+  {% for post in sort_page %}
     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
