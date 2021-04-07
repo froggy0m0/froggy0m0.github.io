@@ -6,14 +6,11 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="font-date">📅 Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
   
-  {% if page.message or page.reference_url %}
+  {% if page.message %}
     <p class ="post-message">
       {{ page.message }}<br>
-      <a href="{{ page.reference_url }}">{{ page.reference_url }}</a>
     </p>
   {% endif %}
-
-
 
   <hr>
   <span class="font-Noto_Serif_KR">{{ content }}</span>
