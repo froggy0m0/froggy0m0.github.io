@@ -14,7 +14,7 @@ categories: GitHubPage
 
 먼저 [Google Fonts](https://fonts.google.com/) 에 접속하여 원하는 폰트를 선택한후 아래화면과 같이 `scss`파일에 import 해줄수있는 문장을 얻어왔다.
 
-<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-03-jekyll_font_setting-1.png" width="600" height="300"> 
+<img src="https://run-giraffe.github.io/assets/img/GitHubPage/2021-04-03-jekyll_font_setting-1.png"> 
 
 이후 `scss/style.scss` import하고
 
