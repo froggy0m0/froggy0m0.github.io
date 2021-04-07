@@ -13,7 +13,13 @@ layout: default
   {% endif %}
 
   <hr>
+  <aside class="sidebar__right sticky" style="height: auto !important;">
+    <div class="toc">
+  {% include toc.html html=content %}
+    </div>
+  </aside>
   <span class="font-Noto_Serif_KR">{{ content }}</span>
+  
 </div>
 
 
