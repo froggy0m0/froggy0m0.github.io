@@ -24,14 +24,32 @@
   </nav>
 </div>
 
-<!-- Etc 카테고리 -->
+<!-- Dev 카테고리 -->
 
 <div>
-  <div class="main-category-name">Etc</div>
+  <div class="main-category-name">Dev</div>
+  <nav class="content-ul">
+    {% for category in site.categories %}
+      {% if category[0] == "Project" or
+            category[0] == "GitHubPage"%}
+      <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
+        class="sidebar-nav-item pl-3rem">
+                            <span class="sub-category-name">
+                                {{ category | first }}
+                            </span>
+        <span class="badge">{{ category | last | size }}</span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>
+
+<div>
+  <div class="main-category-name">Dev</div>
   <nav class="content-ul">
     {% for category in site.categories %}
       {% if category[0] == "Python" or
-            category[0] == "GitHubPage"%}
+            category[0] == ">title<"%}
       <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
         class="sidebar-nav-item pl-3rem">
                             <span class="sub-category-name">
