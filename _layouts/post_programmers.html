@@ -6,6 +6,12 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="font-date">📅 Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
   
+  <aside class="sidebar__right sticky" style="height: auto !important;">
+    <div class="toc">
+  {% include toc.html html=content %}
+    </div>
+  </aside>
+
   {% capture text%}
   >출처 : __프로그래머스__ <https://programmers.co.kr/learn/challenges>
   {% endcapture %}
@@ -18,6 +24,7 @@ layout: default
   {% endif %}
 
   <hr>
+
   <span class="font-Noto_Serif_KR">{{ content }}</span>
   
 </div>
