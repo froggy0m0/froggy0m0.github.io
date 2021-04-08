@@ -6,6 +6,12 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="font-date">📅 Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
   
+  <aside class="sidebar__right sticky" style="height: auto !important;">
+    <div class="toc">
+  {% include toc.html html=content %}
+    </div>
+  </aside>
+  
   {% if page.message %}
     <p class ="post-message">
       {{ page.message }}<br>
@@ -13,11 +19,7 @@ layout: default
   {% endif %}
 
   <hr>
-  <aside class="sidebar__right sticky" style="height: auto !important;">
-    <div class="toc">
-  {% include toc.html html=content %}
-    </div>
-  </aside>
+
   <span class="font-Noto_Serif_KR">{{ content }}</span>
   
 </div>
