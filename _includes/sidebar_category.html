@@ -44,12 +44,14 @@
   </nav>
 </div>
 
+<!-- Etc 카테고리 -->
+
 <div>
-  <div class="main-category-name">Dev</div>
+  <div class="main-category-name">Etc</div>
   <nav class="content-ul">
     {% for category in site.categories %}
-      {% if category[0] == "Python" or
-            category[0] == ">title<"%}
+      {% if category[0] == "Project" or
+            category[0] == "DataStructures"%}
       <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
         class="sidebar-nav-item pl-3rem">
                             <span class="sub-category-name">
