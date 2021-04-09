@@ -4,5 +4,5 @@ title: Project
 permalink: 'categories/Project'
 order: 
 description: >
-  Project
+  프로젝트
 ---
