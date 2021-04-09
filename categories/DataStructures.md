@@ -4,5 +4,5 @@ title: DataStructures
 permalink: 'categories/DataStructures'
 order: 
 description: >
-   Data Structurasd
+   자료구조 정리
 ---
