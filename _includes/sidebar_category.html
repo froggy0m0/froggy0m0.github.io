@@ -50,7 +50,7 @@
   <div class="main-category-name">Etc</div>
   <nav class="content-ul">
     {% for category in site.categories %}
-      {% if category[0] == "" or
+      {% if category[0] == "memo" or
             category[0] == "DataStructures"%}
       <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
         class="sidebar-nav-item pl-3rem">
