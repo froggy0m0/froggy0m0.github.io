@@ -31,11 +31,11 @@ def solution(n):
 
   ​    
 
-nCnt = 기존 매개변수의 이진수의 '1' 의 카운트갯수
+`nCnt`  기존 매개변수의 이진수의 '1' 의 카운트갯수
 
-resultCnt = 매 반복마다 증감시킨 이진수의 '1'의 카운트갯수
+`resultCnt`  매 반복마다 증감시킨 이진수의 '1'의 카운트갯수
 
-nCnt와 resultCnt와 비교해서 답을찾았다.    
+`nCnt`와 `resultCnt`와 비교해서 답을찾았다.    
 
 ​     
 
