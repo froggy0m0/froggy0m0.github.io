@@ -32,4 +32,8 @@ def solution(board,moves):
     return cnt
 ```
 
+​    
+
 * ## 풀이
+
+  ​    
