@@ -25,7 +25,13 @@ def solution(s):
     return True if count == 0 else False
 ```
 
+​    
+
+
+
 * ## 풀이 
+
+     
 
 괄호는 항상 여는괄호 `' ( '`  부터 나와야되고
 
