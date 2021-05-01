@@ -1,8 +1,8 @@
 ---
 layout: category
-title: memo
-permalink: 'categories/memo'
+title: Memo
+permalink: 'categories/Memo'
 order: 
 description: >
-  memo
+  Memo
 ---
