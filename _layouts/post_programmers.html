@@ -12,10 +12,13 @@ layout: default
     </div>
   </aside>
 
+  
   {% capture text%}
   >출처 : __프로그래머스__ <https://programmers.co.kr/learn/challenges>
   {% endcapture %}
   {{ text | markdownify }}<br>
+
+
   {% if page.message or page.reference_url %}
     <p class ="post-message">
       {{ page.message }}<br>
@@ -23,9 +26,7 @@ layout: default
     </p><br>
   {% endif %}
 
-  <hr>
-
-  <span class="font-Noto_Serif_KR">{{ content }}</span>
+  <span class="post-contents">{{ content }}</span>
   
 </div>
 {{ text | markdownify }}
