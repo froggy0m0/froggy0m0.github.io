@@ -1,0 +1,65 @@
+<!-- Home 으로 ! 
+밑에 카테고리들과같은 class 인데 왜 같은 폰트로 출력이안될까 ..?-->
+
+<nav class="sidebar-nav">
+  <a class="main-category-name" href="{{ '/' | absolute_url }}">Home</a>
+</nav>
+
+<div class="wrapper">
+  <ui class="mainMenu">
+      <li class="item" id="account">
+          <a href="#account" class="btn"><i class="fas fa-user-circle"></i>My Account</a>
+          <div class="subMenu">
+            {% for category in site.categories %}
+            {% if category[0] == "Programmers" or
+                  category[0] == "dasdasd"%}
+            <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
+              class="sidebar-nav-item pl-3rem">
+                                  <span class="sub-category-name">
+                                      {{ category | first }}
+                                  </span>
+              <span class="badge">{{ category | last | size }}</span>
+            </a>
+            {% endif %}
+          {% endfor %}
+          </div>
+      </li>
+      <li class="item" id="about">
+          <a href="#about" class="btn"><i class="fas fa-address-card"></i>About</a>
+          <div class="subMenu">
+            {% for category in site.categories %}
+            {% if category[0] == "Project" or
+                  category[0] == "GitHubPage"%}
+            <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
+              class="sidebar-nav-item pl-3rem">
+                                  <span class="sub-category-name">
+                                      {{ category | first }}
+                                  </span>
+              <span class="badge">{{ category | last | size }}</span>
+            </a>
+            {% endif %}
+          {% endfor %}
+          </div>
+      </li>
+      <li class="item" id="support">
+          <a href="#support" class="btn"><i class="fas fa-info"></i>Support</a>
+          <div class="subMenu">
+            {% for category in site.categories %}
+            {% if category[0] == "Memo" or
+                  category[0] == "DataStructures" or
+                  category[0] == "Linux" or
+                  category[0] == "Project"
+                  %}
+            <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
+              class="sidebar-nav-item pl-3rem">
+                                  <span class="sub-category-name">
+                                      {{ category | first }}
+                                  </span>
+              <span class="badge">{{ category | last | size }}</span>
+            </a>
+            {% endif %}
+          {% endfor %}
+          </div>
+      </li>
+  </ui>
+</div>
