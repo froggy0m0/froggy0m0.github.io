@@ -2,7 +2,7 @@
 layout: post
 title: 나의 windows10 셋팅
 categories: Memo
-message: ..
+message: 백업용..
 ---
 
 * ## 윈도우 검색중 웹검색 제거하기
