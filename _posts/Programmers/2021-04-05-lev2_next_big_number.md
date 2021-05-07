@@ -7,11 +7,7 @@ reference_url: https://programmers.co.kr/learn/courses/30/lessons/12911
 
 ---
 
-# 다음 큰 숫자
 
-​       
-
-​     
 
 * ## 소스 코드
 
