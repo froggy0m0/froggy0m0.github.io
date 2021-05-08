@@ -223,6 +223,7 @@ body {
   }
 
   h3 {
+    margin : 50px 0px 25px 0px;
     font-family: 'Jua', serif;
   }
 
@@ -246,6 +247,11 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   border-bottom: 2.0px solid rgb(238, 238, 238);
+}
+
+.post-contents h3 {
+  margin: 50px 0px 25px 0px;
+  font-family: 'Jua', serif;
 }
 
 .post-contents code { // markdown `` 강조 코드
@@ -344,7 +350,3 @@ body {
   }
 
   //``` codeblock의 박스
-.language-plaintext.highlighter-rouge {
-  margin-top : 70px;
-  margin-bottom: 30px;
-}
