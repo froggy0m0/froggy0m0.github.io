@@ -206,8 +206,8 @@ body {
 //기본 post 내용 폰트
 
 .post-contents {
-  font-family : 'Noto Serif KR', serif;
-  line-height : 33px;
+  font-family: 'Noto Serif KR', serif;
+  line-height: 33px;
 
   h1 {
     font-family: 'Jua', serif;
@@ -216,6 +216,7 @@ body {
   h2 {
     margin: 100px 0px 50px 0px;
     padding-bottom: 10px;
+    font-size: 40px;
     font-family: 'Jua', serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -223,42 +224,37 @@ body {
   }
 
   h3 {
-    margin : 50px 0px 25px 0px;
+    margin: 75px 0px 25px 0px;
+    font-size: 33px;
     font-family: 'Jua', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 
   h4 {
+    margin: 50px 0px 25px 0px;
     font-family: 'Jua', serif;
+    font-size: 25px;
+    font-weight: bold;
   }
 
   h5 {
     font-family: 'Jua', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 
   h6 {
     font-family: 'Jua', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  code { // markdown `` 강조 코드
+    font-family: 'Noto Serif KR', sans-serif;
+    word-spacing: 3px;
   }
 }
-
-.post-contents h2 {
-  margin: 100px 0px 50px 0px;
-  padding-bottom: 10px;
-  font-family: 'Jua', serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 2.0px solid rgb(238, 238, 238);
-}
-
-.post-contents h3 {
-  margin: 50px 0px 25px 0px;
-  font-family: 'Jua', serif;
-}
-
-.post-contents code { // markdown `` 강조 코드
-  font-family : 'Noto Serif KR', sans-serif;
-  word-spacing : 3px;
-}
-
 
   //기본폰트
 .font-Noto_Serif_KR {
