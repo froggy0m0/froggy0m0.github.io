@@ -18,9 +18,8 @@ def solution(lottos, win_nums):
 
 ​      
 
-* ## 풀이 
+* ## 풀이    
 
-  ​    
 
 `lottos` 배열과 `win_nums` 의 배열의 교집합의 len으로 최저 당첨 갯수를 구하고
 
