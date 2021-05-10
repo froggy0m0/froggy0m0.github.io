@@ -209,6 +209,26 @@ body {
   font-family: 'Noto Serif KR', serif;
   line-height: 33px;
 
+  span {
+    font-weight: bold;
+  }
+
+  ul {
+    li {
+      strong {
+        font-family: 'Jua', serif;
+      }
+    }
+  }
+
+  ol {
+    li {
+      strong {
+        font-family: 'Jua', serif;
+      }
+    }
+  }
+
   h1 {
     font-family: 'Jua', serif;
   }
@@ -346,3 +366,4 @@ body {
   }
 
   //``` codeblock의 박스
+
