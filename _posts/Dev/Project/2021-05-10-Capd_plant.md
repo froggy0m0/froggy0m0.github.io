@@ -138,9 +138,9 @@ WHERE id = $ and plantcode = $ ; -- $는 코드에서 받아오는걸로
 
 #### pymysql
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-1" width="600" height="300">
+<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-1.png" width="600" height="300">
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-2" width="600" height="300">
+<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-2.png" width="600" height="300">
 
 ### 안드로이드
 
