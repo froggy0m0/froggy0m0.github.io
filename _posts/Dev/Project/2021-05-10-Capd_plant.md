@@ -13,6 +13,12 @@ message: 캡스톤디자인
 ### python3
 
 ```
+#!/usr/bin/env python
+```
+
+최상단에 작성해야되는것같다
+
+```
 yum install python3 -y
 
 python3 -v
@@ -59,6 +65,9 @@ fclose(fp);
 ```
 
 ```
+##실행권한
+[user@localhost t1]$ chmod +x test.sh
+
 ## crontab
 
 [user@localhost ~]$ crontab -e
