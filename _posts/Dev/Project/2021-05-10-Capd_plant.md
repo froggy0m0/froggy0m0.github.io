@@ -78,8 +78,6 @@ fclose(fp);
 
 ### DB
 
-mysql> create database Plant;
-
 ```
 mysql> create database PlantDB;
 Query OK, 1 row affected (0.00 sec)
