@@ -95,13 +95,15 @@ CREATE TABLE plant(
 	water int DEFAULT '0' NOT NULL,
 	temperature int DEFAULT '0' NOT NULL,
 	humidity int DEFAULT '0' NOT NULL,
-    -- txt TEXT NOT NULL,
+    txt TEXT,
 	PRIMARY KEY(plantcode),
 	CHECK(plantcode LIKE 'p__')
 );
 -- insert 
-insert into plant VALUES ('p01','tomato','2','25','30');
-insert into plant VALUES ('p02','abcdef','2','27','35');
+insert into plant(plantcode, name, water, temperature, humidity,txt) values('p01','토마토','2','25','30','나는 토마토!');
+
+insert into plant(plantcode, name, water, temperature, humidity,txt) values('p02','고구마','2','33','22','호박고구마');
+
 ```
 
 
@@ -117,23 +119,24 @@ CREATE TABLE userinfo(
     -- CHECK (plnatcode in ('p01','p02')) -- 제약조건에 해당하는 식물만 등록가능
 );
 
-insert into userinfo VALUES ('jj001','12345','p03'); -- 외래키오류??
+insert into userinfo VALUES ('jj001','12345','p03');
 ```
 
 ```sql
 -- 라즈베리파이로 부터 받아오는 저장될 값들
 CREATE TABLE management(
+    pp VARCHAR(20) NOT NULL,
     id VARCHAR(20) NOT NULL,
     plantcode VARCHAR(10) NOT NULL,
     temperature INT NOT NULL,
     humidity INT  NOT NULL,
     ddate DATETIME NOT NULL,		-- yyyy-mm--dd
-    PRIMARY KEY(id,plantcode),
+    PRIMARY KEY(pp),
     FOREIGN KEY (id) REFERENCES userinfo (id),
     FOREIGN KEY (plantcode) REFERENCES plant (plantcode)
 );
 
-insert into management VALUES ('jj003','p04','23','23','2001-12-12'); -- 외래키오류??
+insert into management VALUES ('0x00','jj001','p01','23','23','2001-12-12');
 ```
 
 ```sql
