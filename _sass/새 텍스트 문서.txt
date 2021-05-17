@@ -1,0 +1,9 @@
+h2는 자동으로 밑줄
+
+
+post-contents의 p태그 밑에 span태그
+즉 <span style="color:royalblue"></span> 에는 font-weight : bold
+
+markdown문법중
+* - or 1. 
+순서목록이나 순서없는 목록의 __내용__ 진하게하는건 font-family : jua 로 연결
