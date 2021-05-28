@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 라즈베리파이를 이용한 식물 재배기
+title: RPAC 라즈베리파이를 이용한 AI기반 식물 재배기
 categories: Project
 message: 캡스톤디자인
 
