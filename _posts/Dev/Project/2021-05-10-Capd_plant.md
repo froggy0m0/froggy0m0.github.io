@@ -8,7 +8,7 @@ message: 캡스톤디자인
 
 # 식물 재배기   
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-3.png">
+<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-3.jpg">
 
 ### 리눅스 
 
@@ -160,6 +160,6 @@ WHERE id = $ and plantcode = $ ; -- $는 코드에서 받아오는걸로
 
 ### AI
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-4.png">
+<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-4.jpg">
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-5.png">
+<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-5.jpg">
