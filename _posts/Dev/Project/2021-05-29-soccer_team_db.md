@@ -10,7 +10,7 @@ order: 1
 
 ## 전북현대모터스 DB
 
-## 구단
+### 구단
 
 __구단 테이블__
 
@@ -45,7 +45,7 @@ FOREIGN KEY (구단번호) REFERENCES 구단 (구단번호)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-2.png">
 
-## 선수
+### 선수
 
 __선수 계약 테이블__
 
@@ -96,7 +96,7 @@ CHECK (포지션 in ('GK','DF','MF','FW’))
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-4.png">
 
-## 코치
+### 코치
 
 __코치 계약 테이블__
 
@@ -140,7 +140,7 @@ CHECK(계약번호 LIKE 's-2___’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-6.png">
 
-## 의료진
+### 의료진
 
 __의료진 계약 테이블__
 
@@ -184,7 +184,7 @@ CHECK(계약번호 LIKE 's-3___’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-8.png">
 
-## 직원
+### 직원
 
 __직원 계약 테이블__
 
@@ -231,7 +231,7 @@ CHECK (나이 >= 1 AND 나이 <= 99)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-10.png">
 
-##  지도 (코치 - 선수)
+### 지도 (코치 - 선수)
 
 ```mysql
 CREATE TABLE 지도(
@@ -251,7 +251,7 @@ CHECK(지도번호 LIKE 't__’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-11.png">
 
-## 치료 (선수 - 의료진)
+### 치료 (선수 - 의료진)
 
 ```mysql
 CREATE TABLE 치료(
@@ -271,7 +271,7 @@ CHECK(치료번호 LIKE 'h__’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-12.png">
 
-## 경기
+### 경기
 
 ```mysql
 CREATE TABLE 경기(
@@ -290,7 +290,7 @@ CHECK(경기번호 LIKE 'g__’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-13.png">
 
-## 출전 (선수 - 경기)
+### 출전 (선수 - 경기)
 
 ```mysql
 CREATE TABLE 출전(
@@ -308,7 +308,7 @@ FOREIGN KEY (선수번호) REFERENCES 선수 (선수번호)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-14.png">
 
-## 재정
+### 재정
 
 ```mysql
 CREATE TABLE 재정(
@@ -327,7 +327,7 @@ CHECK (재정번호 LIKE  'f__’)
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-15.png">
 
-## 뷰
+### 뷰
 
 __지출 내역 뷰__
 
@@ -372,7 +372,7 @@ GROUP BY   선수.선수번호;
 
 ​     
 
-## 트랙잭션
+### 트랙잭션
 
 __계약 트랜잭션1__
 
