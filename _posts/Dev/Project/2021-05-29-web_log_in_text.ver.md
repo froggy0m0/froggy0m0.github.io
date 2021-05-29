@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 웹페이지 로그인,회원 가입 기능 구현(텍스트 파일.ver)
+title: html & php웹페이지 로그인,회원 가입 기능 구현(텍스트 파일.ver)
 categories: Project
 message: 웹 프로그래밍
 order: 1
@@ -8,17 +8,15 @@ order: 1
 
 ## 웹페이지 로그인 기능 구현
 
-기본적인 로그인,회원 가입, 회원정보수정 기능을 구현하였습니다.
+기본적인 로그인,회원 가입, 회원 정보 수정 기능을 구현하였습니다.
 
 __텍스트 파일.ver__ 은 사용자 정보를  _.txt_ 파일에 저장하고/읽는 방식
-
-__DB.ver__ 은 사용자 정보를 DB에 구현하여  저장하고/읽는 방식
 
 ### index
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-1.png">
 
-_로그인 체크 기능__으로  사용자의 입력을 받아
+__로그인 체크 기능__ 으로  사용자의 입력을 받아
 
 회원 정보 텍스트 파일인 _studentinfo.txt_ 의 정보와 비교하여 로그인 기능을 수행.
 
@@ -107,7 +105,7 @@ fclose($fptr1);
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-2.png">
 
-__회원 가입 __기능으로 사용자에게 데이터를 입력 받아 _studentinfo.txt_ 파일에 저장하는 역할
+__회원 가입__ 기능으로 사용자에게 데이터를 입력 받아 _studentinfo.txt_ 파일에 저장하는 역할
 
 #### join.html
 
@@ -194,7 +192,7 @@ else{
 
 <img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-3.png">
 
-__회원 정보 수정__으로 _studentinfo.txt_을 읽고 인증 과정을 거치고 해당 회원 정보를 수정한다.
+__회원 정보 수정__ 으로 _studentinfo.txt_을 읽고 인증 과정을 거치고 해당 회원 정보를 수정한다.
 
 #### mod.html
 
