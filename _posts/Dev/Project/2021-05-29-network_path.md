@@ -8,7 +8,7 @@ order: 1
 
 다익스트라 & 벨만포드 알고리즘구현
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-network_path-1.png">
+<img src="https://snaklad.github.io/assets/img/project/2021-05-29-network_path-1.png">
 
 ### Dijkstar's Algorithm
 
