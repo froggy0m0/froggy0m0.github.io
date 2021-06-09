@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: DataBase 전북현대모터스 구현
+title: DataBase 전북현대모터스 설계
 categories: Project
 message: DataBase
 order: 1
@@ -10,7 +10,7 @@ order: 1
 
 ## 전북현대모터스 DB
 
-2020년도 전북현대모터스 기반으로 한 데이터베이스 구현입니다.
+2020년도 전북현대모터스 기반으로 한 데이터베이스 설계입니다.
 
 그외 가상의 정보도 추가하였습니다.
 
