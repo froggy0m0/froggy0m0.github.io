@@ -1,5 +1,5 @@
 ---
-layout: post_programmers
+layout: post
 title: ⭐ 로또의 최고 순위와 최저 순위
 categories: Programmers
 message: 프로그래머스 / 코딩연습 / 2021 Dev-Matching 웹 백엔드 개발자(상반기) / 로또의 최고 순위와 최저 순위

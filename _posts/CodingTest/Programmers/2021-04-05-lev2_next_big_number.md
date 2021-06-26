@@ -1,5 +1,5 @@
 ---
-layout: post_programmers
+layout: post
 title: ⭐⭐ 다음 큰 숫자
 categories: Programmers
 message: 프로그래머스 / 연습문제 / 다음 큰 숫자

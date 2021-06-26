@@ -1,5 +1,5 @@
 ---
-layout: post_programmers
+layout: post
 title: ⭐⭐ 올바른 괄호
 categories: Programmers
 message: 프로그래머스 / 연습문제 / 올바른 괄호

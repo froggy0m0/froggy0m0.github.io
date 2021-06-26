@@ -1,5 +1,5 @@
 ---
-layout: post_programmers
+layout: post
 title: ⭐⭐ 기능개발
 categories: Programmers
 message: 프로그래머스 / 코딩연습 / 스택/큐 / 기능개발
