@@ -1,0 +1,17 @@
+  {% capture text%}
+  >출처 : __프로그래머스__ <https: //programmers.co.kr/learn/challenges>
+  {% endcapture %}
+  {{ text | markdownify }}<br>
+
+
+  {% if page.message or page.reference_url %}
+  <p class="post-message">
+    {{ page.message }}<br>
+    <a href="{{ page.reference_url }}">{{ page.reference_url }}</a>
+  </p><br>
+  {% endif %}
+
+  <span class="post-contents">{{ content }}</span>
+
+  </div>
+  {{ text | markdownify }}
