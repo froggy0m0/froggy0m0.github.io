@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="post">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="font-date">📅 Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
+  <i class="fa fa-calendar" aria-hidden="true"></i>
+  <span class="font-date"> Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
   
   <aside class="sidebar__right sticky" style="height: auto !important;">
     <div class="toc">
