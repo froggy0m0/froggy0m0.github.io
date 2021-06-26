@@ -7,24 +7,20 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <i class="fa fa-calendar" aria-hidden="true"></i>
   <span class="font-date"> Date:{{ page.date | date : "%Y.%m.%d" }}</span><br></br>
-  
+
   <aside class="sidebar__right sticky" style="height: auto !important;">
     <div class="toc">
-  {% include toc.html html=content %}
+      {% include toc.html html=content %}
     </div>
   </aside>
-  
 
-  {% if page.message %}
-    <p class ="post-message">
-      {{ page.message }}<br>
-    </p>
+  {% if post.categories == Programmers %}
+    {% include post_programmers.html %}
+  {% else %}
+    {% include post_default.html %}
   {% endif %}
 
-  
-  <span class="post-contents">{{ content }}</span>
-  
-</div>
+
 
 
 
