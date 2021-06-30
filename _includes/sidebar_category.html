@@ -52,7 +52,8 @@
     {% for category in site.categories %}
       {% if category[0] == "Memo" or
             category[0] == "DataStructures" or
-            category[0] == "Linux"
+            category[0] == "Linux" or
+            category[0] == "NetWork"
             %}
       <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
         class="sidebar-nav-item pl-3rem">
