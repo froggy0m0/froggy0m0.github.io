@@ -352,6 +352,8 @@ body {
   float: right;
 }
 
+  //toc 설정
+
 .toc {
   background-color: #ffffff;
   border-radius: 40px;
@@ -360,18 +362,19 @@ body {
   width: 100%;
   font-size: 1em;
   position: fixed;
+  top: 250px;
   font-family: 'Jua', serif;
 
-    ul {
-      margin: 0;
-      padding: 10px;
-      list-style: none;
-    }
-
-    li {
-      padding: 10px 10px;
-    }
+  ul {
+    margin: 0;
+    padding: 7px 10px;
+    list-style: none;
   }
+
+  li {
+    padding: 4px 10px;
+  }
+}
 
   //``` codeblock의 박스
 
