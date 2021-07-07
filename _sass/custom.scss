@@ -209,6 +209,7 @@ body {
   font-family: 'Noto Serif KR', serif;
   font-size: 18px;
   line-height: 33px;
+  color:#303030;
 
   span {
     font-weight: bold;
@@ -218,7 +219,10 @@ body {
     font-weight: bold;
   }
 
-  ul {
+  strong {
+    font-family: 'Jua', serif;
+  }
+  /*ul {
     li {
       strong {
         font-family: 'Jua', serif;
@@ -233,7 +237,7 @@ body {
       }
     }
   }
-
+*/
   h1 {
     font-family: 'Jua', serif;
   }
