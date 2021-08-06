@@ -2,15 +2,12 @@
   <hr/>
   {% if site.copyright.size > 0 %}
   <center id='p1'>
-    <span>
-    <STRIKE>Proggy</STRIKE>
-    <STRIKE>LAB</STRIKE>
-  </span>
+    {{ site.copyright | markdownify }}
   </center>
   {% endif %}
   <p>
   <center>
-    <code id='p2'><a href={{ site.url }}>{{ site.title }}</a></code>
+    <code id='p2'>Powered by <a href={{ site.url }}>{{ site.title }}</a></code>
   </center>  
 </p>
 </footer>
