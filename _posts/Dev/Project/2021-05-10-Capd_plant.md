@@ -8,7 +8,7 @@ message: 캡스톤디자인
 
 # 식물 재배기   
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-3.jpg">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-10-Capd_plant-3.jpg">
 
 ### 리눅스 
 
@@ -150,9 +150,9 @@ WHERE id = $ and plantcode = $ ; -- $는 코드에서 받아오는걸로
 
 #### pymysql
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-1.png" width="600" height="300">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-10-Capd_plant-1.png" width="600" height="300">
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-2.png" width="600" height="300">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-10-Capd_plant-2.png" width="600" height="300">
 
 ### 안드로이드
 
@@ -160,6 +160,6 @@ WHERE id = $ and plantcode = $ ; -- $는 코드에서 받아오는걸로
 
 ### AI
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-4.jpg">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-10-Capd_plant-4.jpg">
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-10-Capd_plant-5.jpg">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-10-Capd_plant-5.jpg">

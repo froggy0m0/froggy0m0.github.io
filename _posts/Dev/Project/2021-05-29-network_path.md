@@ -8,7 +8,7 @@ order: 1
 
 다익스트라 & 벨만포드 알고리즘구현
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-network_path-1.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-network_path-1.png">
 
 ### Dijkstar's Algorithm
 
@@ -21,7 +21,7 @@ order: 1
 |     5     |  {1,2,3,4,5}  |  3   | 2-1  |  3   | 2-3  |  2   | 2-4  |  3   | 2-4-5 |  5   | 2-4-5-6 |
 |     6     | {1,2,3,4,5,6} |  3   | 2-1  |  3   | 2-3  |  2   | 2-4  |  3   | 2-4-5 |  5   | 2-4-5-6 |
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-network_path-2.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-network_path-2.png">
 
 ```java
 package Dijkstra;
@@ -207,7 +207,7 @@ public class Dijkstar {
 | 3    | 3     | 2-1  | 3     | 2-3  | 2     | 2-4  | 3     | 2-4-5 | 5     | 2-4-5-6 |
 | 4    | 3     | 2-1  | 3     | 2-3  | 2     | 2-4  | 3     | 2-4-5 | 5     | 2-4-5-6 |
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-network_path-3.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-network_path-3.png">
 
 ```java
 package bellman;

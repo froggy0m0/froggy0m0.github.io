@@ -31,7 +31,7 @@ UNIQUE (구단명)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-1.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-1.png">
 
 ​     
 
@@ -49,7 +49,7 @@ FOREIGN KEY (구단번호) REFERENCES 구단 (구단번호)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-2.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-2.png">
 
 ### 선수
 
@@ -69,7 +69,7 @@ CHECK(계약시작일 < 계약종료일)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-3.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-3.png">
 
 ​     
 
@@ -100,7 +100,7 @@ CHECK (포지션 in ('GK','DF','MF','FW’))
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-4.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-4.png">
 
 ### 코치
 
@@ -120,7 +120,7 @@ CHECK(계약시작일 < 계약종료일)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-5.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-5.png">
 
 ​    
 
@@ -144,7 +144,7 @@ CHECK(계약번호 LIKE 's-2___’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-6.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-6.png">
 
 ### 의료진
 
@@ -164,7 +164,7 @@ CHECK(계약시작일 < 계약종료일)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-7.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-7.png">
 
 ​     
 
@@ -188,7 +188,7 @@ CHECK(계약번호 LIKE 's-3___’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-8.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-8.png">
 
 ### 직원
 
@@ -208,7 +208,7 @@ CHECK(계약시작일 < 계약종료일)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-9.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-9.png">
 
 ​    
 
@@ -235,7 +235,7 @@ CHECK (나이 >= 1 AND 나이 <= 99)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-10.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-10.png">
 
 ### 지도 (코치 - 선수)
 
@@ -255,7 +255,7 @@ CHECK(지도번호 LIKE 't__’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-11.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-11.png">
 
 ### 치료 (선수 - 의료진)
 
@@ -275,7 +275,7 @@ CHECK(치료번호 LIKE 'h__’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-12.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-12.png">
 
 ### 경기
 
@@ -294,7 +294,7 @@ CHECK(경기번호 LIKE 'g__’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-13.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-13.png">
 
 ### 출전 (선수 - 경기)
 
@@ -312,7 +312,7 @@ FOREIGN KEY (선수번호) REFERENCES 선수 (선수번호)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-14.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-14.png">
 
 ### 재정
 
@@ -331,7 +331,7 @@ CHECK (재정번호 LIKE  'f__’)
 ); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-15.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-15.png">
 
 ### 뷰
 
@@ -344,7 +344,7 @@ FROM 재정
 WHERE 지출내역 > 0
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-16.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-16.png">
 
 ​     
 
@@ -360,7 +360,7 @@ GROUP BY   선수.선수번호;
 
 
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-17.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-17.png">
 
 ​     
 
@@ -374,7 +374,7 @@ WHERE   선수.선수번호   =   출전.선수번호
 GROUP BY   선수.선수번호;
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-18.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-18.png">
 
 ​     
 
@@ -394,7 +394,7 @@ into 선수
 values ('b24','홍길동','31','DF','36','01','s-1024'); 
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-19.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-19.png">
 
 ​     
 
@@ -412,5 +412,5 @@ into 직원
 values ('e08','홍길동','55','마케팅','2021-01-01','01','s-4008');
 ```
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-soccer_team_db-20.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-soccer_team_db-20.png">
 

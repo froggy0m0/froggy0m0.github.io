@@ -22,6 +22,7 @@ message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>
+          <img src="https://Froggy0m0.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png">
         <small class="font-date">
             {{ post.date | date : "%Y.%m.%d" }}</small>
       </h3>
