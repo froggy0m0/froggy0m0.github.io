@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Proggy LAB
+title: Froggy LAB
 email: your-email@example.com
-description: 안녕하세요 공부하는 블로그입니다 Proggy :()
+description: Froggy :()
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ProggyLAB.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://Froggy0m0.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:
-copyright: '&copy; 2021-2021 ~~Proggy~~ ~~LAB~~'
+copyright: '&copy; 2021-2021 ~~Froggy~~ ~~0m0~~'
 message: 개인공부기록 블로그입니다.... 다소 틀린부분이있더라도 양해부탁드립니다 👀;;
 
 
@@ -35,8 +35,8 @@ author:
   avatar: "/assets/img/me.jpg"
   bio: "Hi :()"
   location : "South Korea"
-  email: 201668031@jj.ac.kr
-  github: https://github.com/ProggyLAB
+  email: froggy0m0a@gmail.com
+  github: https://github.com/froggy0m0
 
 
 # Category
