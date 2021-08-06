@@ -38,6 +38,10 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 WSL 2 기본 버전 설정
 
+오류가 뜰경우 재부팅한다.
+
+arm 혹은 x64 프로세스 를 사용중이다면 하단 참고 url 4단계에 제공하는 패키지를 설치합니다.
+
 ```powershell
 wsl --set-default-version 2
 ```
