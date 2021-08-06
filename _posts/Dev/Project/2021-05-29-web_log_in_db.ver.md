@@ -28,7 +28,7 @@ __scoreselect2.php의 기능은 원래 작동하지 않았습니다.__
 
 ### index
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-1.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-1.png">
 
 홈페이지의 메인 화면입니다.
 
@@ -81,7 +81,7 @@ if ($id != "" && $pw != "") {
 
 ### login-state01.php
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-2.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-2.png">
 
 사용자가 로그인에 성공하면 DB저장되는 사용자의 정보가 출력됩니다.
 
@@ -93,7 +93,7 @@ if ($id != "" && $pw != "") {
 
 ### score.php
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-3.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-3.png">
 
 사용자가 성적을 입력하면 입력한 데이터 값이 __scoreinsert.php__에 의해 저장됩니다.
 
@@ -211,7 +211,7 @@ location = 'score.php';
 
 ### scoreselect.php
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-4.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-4.png">
 
 ```php
 <?php
@@ -283,4 +283,4 @@ mysqli_close($connect);
 
 ## DB구조
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-5.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_db.ver-5.png">

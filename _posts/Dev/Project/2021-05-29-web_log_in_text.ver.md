@@ -14,7 +14,7 @@ __텍스트 파일.ver__ 은 사용자 정보를  _.txt_ 파일에 저장하고/
 
 ### index
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-1.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-1.png">
 
 __로그인 체크 기능__ 으로  사용자의 입력을 받아
 
@@ -103,7 +103,7 @@ fclose($fptr1);
 
 ### join
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-2.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-2.png">
 
 __회원 가입__ 기능으로 사용자에게 데이터를 입력 받아 _studentinfo.txt_ 파일에 저장하는 역할
 
@@ -190,7 +190,7 @@ else{
 
 ### mod
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-3.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-3.png">
 
 __회원 정보 수정__ 으로 _studentinfo.txt_을 읽고 인증 과정을 거치고 해당 회원 정보를 수정한다.
 
@@ -282,7 +282,7 @@ fclose($fptr2);
 
 ### exit
 
-<img src="https://snaklad.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-4.png">
+<img src="https://Froggy0m0.github.io/assets/img/Project/2021-05-29-web_log_in_text.ver-4.png">
 
 __회원 탈퇴__ 기능 _studentinfo.txt_ 에서 해당하는 정보를 삭제한다.
 
