@@ -1,9 +1,13 @@
   {% if page.message %}
-    <p class="post-message">
-      {{ page.message }}<br>
-    </p>
+<p class="post-message">
+  {{ page.message }}<br>
+</p>
   {% endif %}
 
 
 <span class="post-contents">{{ content }}</span>
+{% if page.reference_url %}
+  </br></br></br></br></br></br></br></br>
+  <blockquote>참고 </br></br><a href="{{ page.reference_url }}"> {{ page.reference_url }}</a></blockquote>
+{% endif %}
 </div>
