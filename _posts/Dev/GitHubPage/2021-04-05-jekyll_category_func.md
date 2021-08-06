@@ -8,7 +8,7 @@ message: 날짜순으로 정렬된 페이지들을 제목정렬과 해당 페이
 
 ## 1. 페이지 제목정렬
 
-<img src="https://snaklad.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png"> 
+<img src="https://Froggy0m0.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-1.png"> 
 
 ```html
 {% raw %}
@@ -52,7 +52,7 @@ for문으로 sort_page변수에서 가져오게 수정하였다.
 
 -> 정렬은 아스키코드값을 기준으로 정렬되는것으로 보인다.
 
-<img src="https://snaklad.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-2.png">    
+<img src="https://Froggy0m0.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-2.png">    
 
 ​        
 
@@ -72,4 +72,4 @@ post-message는 따로 정의한 css style내용이고
 
 {% raw %} `{{ page.message }}` {% endraw %}는 페이지 YAML에서 message변수를 추가하여 그곳에 머릿말을 추가했다.
 
-<img src="https://snaklad.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-3.png">
+<img src="https://Froggy0m0.github.io/assets/img/GitHubPage/2021-04-05-jekyll_category_func-3.png">
