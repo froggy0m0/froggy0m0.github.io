@@ -45,12 +45,16 @@ set foldnestmax=1
 
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
 
+set backup
+set backupdir=~/vim/backup "백업 파일이 저장될 경로"
+set directory=~/vim/tmp "스왑 파일이 저장될 경로"
+      
 map <F9> :! gcc % -o %<<CR>
 map <F10> :! ./%<<CR>
 map <F12> :wq<CR>
 map! <F12> <ESC><F12>
 
-
+inoremap <C-o> <C-o>$<right>;
 
 "파일 수정시 마지막 편집 위치로"
 au BufReadPost *
@@ -66,6 +70,6 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-inoremap (;<CR> ();<left><left>
+"inoremap (;<CR> ();<left><left>
 ```
 
