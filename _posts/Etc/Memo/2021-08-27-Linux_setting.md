@@ -25,11 +25,11 @@ sudo apt-get install vim
 
 <https://github.com/tomasiser/vim-code-dark>
 
-※<https://github.com/tomasiser/vim-code-dark/blob/master/colors/codedark.vim>
+사용한 colorshceme 경로 <https://github.com/tomasiser/vim-code-dark/blob/master/colors/codedark.vim>
 
-raw 로 저장 (airline 안썻음)※
+__raw 로 clone (airline 안썻음) __
 
-__path__ : ~/.vim/colors
+__path__ : ~/.vim/colors `codedark테마` 사용
 
 #### bundle 설치 
 
