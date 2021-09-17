@@ -11,7 +11,7 @@ message: Ubuntu 18.04
 
 #### vim 최신 업데이트
 
-```
+```bash
 sudo apt-get update
 ........................
 ........................
@@ -35,7 +35,7 @@ __path__ : ~/.vim/colors `codedark테마` 사용
 
 <https://github.com/VundleVim/Vundle.vim>
 
-```
+```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
@@ -45,7 +45,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
  update ....  21-08-27
 
-```vim
+```bash
 syntax on
 set title
 set fileencodings=utf8,euc-kr
@@ -165,7 +165,7 @@ let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 
 <https://github.com/pwndbg/pwndbg>
 
-```
+```bash
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
@@ -175,10 +175,23 @@ cd pwndbg
 
  <https://github.com/Gallopsled/pwntools>
 
-```
+```bash
 apt-get update
 apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
+```
+
+#### bash
+
+```bash
+export HISTTIMEFORMAT="%Y.%m.%d  %H:%M:%S -> "
+# export HISTTIMEFORMAT="%Y.%m.%d  %T -> "
+```
+
+#### core 파일 생성
+
+```bash
+ulimit -c unlimited
 ```
 
