@@ -4,7 +4,6 @@ title: WSL을 사용한 Linux 설치
 categories: Linux
 message: 
 reference_url: https://docs.microsoft.com/ko-kr/windows/wsl/install-win10
-
 ---
 
 ## WSL 설치
@@ -46,23 +45,35 @@ WSL 2 기본 버전 설정
 wsl --set-default-version 2
 ```
 
+### Step 5
+
+Microsoft Store에서 사용할 리눅스를 받아 설치한다.
+
+(※오류는 하단 Error 참고)
+
 <img src="https://Froggy0m0.github.io/assets/img/Linux/2021-08-07-wsl-install-3.png">
 
 ### 설치 완료
 
 <img src="https://Froggy0m0.github.io/assets/img/Linux/2021-08-07-wsl-install-6.png">
 
-### Step 5
+#### Ummm....
 
-Microsoft Store에서 사용할 리눅스를 받아 설치한다.
+```sh
+$ sudo passwd root			#초기 root 암호 지정하기!
+```
 
-### Error 1
+
+
+#### Error
 
 <img src="https://Froggy0m0.github.io/assets/img/Linux/2021-08-07-wsl-install-4.png">
 
 arm 혹은 x64 프로세스 를 사용중이다면 하단 참고 url 4단계에 제공하는 패키지를 설치합니다.
 
-Error 2
+https://docs.microsoft.com/en-us/windows/wsl/install-manual
+
+#### Error 2
 
 <img src="https://Froggy0m0.github.io/assets/img/Linux/2021-08-07-wsl-install-5.png">
 
@@ -72,5 +83,17 @@ Error 2
 
 ## WSL 삭제
 
+```powershell
+> wslconfig.exe /l					#wsl 조회
+> wslconfig.exe /u Ubuntu-18.04		  #wsl 삭제
+> wslconfig.exe /l					#wsl 재조회
+```
 
+
+
+#### ~~네트워크 재설치?~~
+
+~~프로그램 및 기능 -> Windows 기능 켜기/끄기 -> Linux용 Windows 하위 시스템 재설치~~
+
+~~장치관리자에서 Hyper -v ~~ ethernet 제거 후 재설치~~
 
