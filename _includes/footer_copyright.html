@@ -1,13 +1,11 @@
 <footer>
   <hr/>
-  {% if site.copyright.size > 0 %}
-  <center id='p1'>
-    {{ site.copyright | markdownify }}
-  </center>
-  {% endif %}
-  <p>
-  <center>
+  <div style="text-align: center;">
+    {% if site.copyright.size > 0 %}
+    <span id='p1'>
+      {{ site.copyright | markdownify }}
+    </span>
+    {% endif %}
     <code id='p2'>Powered by <a href={{ site.url }}>{{ site.title }}</a></code>
-  </center>  
-</p>
+  </div>
 </footer>
