@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자주쓰는거 명령어 메모!
+title: 자주쓰는거 명령어
 categories: Pwnable
 message: 
 ---
