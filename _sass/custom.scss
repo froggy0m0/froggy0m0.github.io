@@ -212,10 +212,6 @@ body {
   line-height: 33px;
   color: #303030;
 
-  code {
-    font-weight: bold;
-  }
-
   strong {
     font-family: 'Jua', serif;
   }
@@ -280,8 +276,11 @@ body {
   }
 
   code { // markdown `` 강조 코드
-    font-family: 'Noto Serif KR', sans-serif;
-    word-spacing: 3px;
+    font-family: '?', sans-serif;   // 기본폰트를 못찾겠다..
+    font-size: 17px;
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 0.4px;
   }
 
   bold {
