@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자주쓰는거 명령어
+title: gdb 명령어정리
 categories: Pwnable
 message: 
 ---
@@ -13,7 +13,7 @@ message:
 | -------------------- | ------------------------------------------------------------ |
 | start                | 진입점에 중단점을 설정하고, 실행                             |
 | quit(q)              | 종료                                                         |
-| break(b)             | break 중단점 설정 ex) b*main                                 |
+| break(b)             | break 중단점 설정 <br>e.g) b*main                            |
 | continue(c)          | 계속 실행                                                    |
 | disassemble(disas)   | disassemble 결과 출력                                        |
 | run(r)               | 해당 프로그램을 처음부터 실행                                |
@@ -28,6 +28,7 @@ message:
 | telescope(tele)      | 메모리 조회, 메모리값이 포인터잂 경우 재귀적으로 따라가며 모든 메모리값 출력 |
 | vmmap                | 메모리 레이아웃 출력                                         |
 | gdb.attach(p)        |                                                              |
+| set                  | 특정 gdb실행 중에서 특정 주소 값 변경 <br>e.g) set *7fffffff1234 = 0x10 |
 
 
 
