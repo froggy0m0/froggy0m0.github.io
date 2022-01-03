@@ -81,4 +81,3 @@ pwndbg>
 $ strings -tx /lib/x86_64-linux-gnu/libc-2.27.so | grep "/bin/sh"
 2b3a22 /bin/sh
 ```
-
