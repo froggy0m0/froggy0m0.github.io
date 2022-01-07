@@ -221,6 +221,24 @@ error1 `Requirement already satisfied ~~`
 
 ~~음 기존 python3.6.9에 문제가있는건가 ?~~
 
+### One_gadget
+
+```bash
+$ sudo apt-get install ruby
+
+........................
+........................
+........................
+
+$sudo gem install one_gadget 
+........................
+........................
+3 gems installed
+$
+```
+
+
+
 ### pwntools
 
  <https://github.com/Gallopsled/pwntools>
