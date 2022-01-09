@@ -57,3 +57,7 @@ $ gcc -m32		#32bit
 $ gcc -m64		#64bit
 ```
 
+```bash
+-mpreferred-stack-boundary=2
+```
+
