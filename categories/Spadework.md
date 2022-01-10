@@ -4,7 +4,7 @@ title: Spadework
 permalink: 'categories/Spadework'
 order: 
 description: >
-  삽질
+  ✔삽질 노트✔ 
 
 ---
 
