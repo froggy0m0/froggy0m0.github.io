@@ -37,8 +37,12 @@ $ gcc -fpie -pie	# PIE 설정
 ## ASLR
 
 ```bash
+##ASLR 확인
 $ cat /proc/sys/kernel/randomize_va_space
 2
+
+##ASLR 변경
+$ cat 0 > /proc/sys/kernel/randomize_va_space
 ```
 
 | Value | comment                        |
