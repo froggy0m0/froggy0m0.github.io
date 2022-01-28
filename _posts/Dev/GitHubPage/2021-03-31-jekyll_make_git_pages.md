@@ -16,12 +16,13 @@ Jekyll을 사용한 github page 제작하기
     <figcaption>Fig 1. 블로그이름 설정</figcaption>
 </figure> 
 
-다음 Set up in Desktop을 통해서 Clone하고 Clone해준 경로에 미리 받아놓은 테마 파일을 붙여넣은후 이후 설치된 __Start Command Prompt with Ruby__를 통해   `chcp65001` 실행
+다음 Set up in Desktop을 통해서 Clone하고 Clone해준 경로에 미리 받아놓은 테마 파일을 붙여넣은후 이후 설치된 __Start Command Prompt with Ruby__ 를 통해   `chcp65001` 실행
 
 <figure>
     <img src="https://Froggy0m0.github.io/assets/img/GitHubPage/2021-03-31-jekyll_make_git_pages-2.png">
     <figcaption>Fig 2. chcp 65001</figcaption>
 </figure>
+
 
 이후 Fig3과 같이 Clone 한 경로(블로그 경로)로 이동하여 gem 명령어를 통하여 필요한 라이브러리를 설치했습니다.
 
