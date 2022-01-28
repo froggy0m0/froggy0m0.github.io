@@ -199,27 +199,10 @@ cd pwndbg
 ### ROPgadget
 
 ```
-python3 -m pip install ROPgadget --user
+sudo apt-get update
+sudo apt install python3-pip
+sudo -H python3 -m pip install ROPgadget
 ```
-
-~~__update-alternatives 에 3.6 넣어보고 ROPgadget을 install 해보던가 ROPgadget 명령어를 실행해보자__~~
-
-__~~python install 전이니까 다시해보기 ~~~__
-
-error1 `Requirement already satisfied ~~`
-
-
-
-> sudo apt-get install python3.7		## 3.7설치 (기존 3.6.9)
->
-> $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2 #3설치한python3.7을 Priority를 설정
->
-> $ sudo update-alternatives --config python	##설정된거 확인
->
-> $ python3 -m pip install ROPgadget --user	## 이후 ROPgadget 설치!
->
-
-~~음 기존 python3.6.9에 문제가있는건가 ?~~
 
 ### One_gadget
 
@@ -244,8 +227,8 @@ $
  <https://github.com/Gallopsled/pwntools>
 
 ```bash
-apt-get update
-apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
+sudo apt-get update
+sudo apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
 python3 -m pip install --upgrade pip		##오류뜨면 PATH 에 경로 추가하기
 python3 -m pip install --upgrade pwntools
 ```
