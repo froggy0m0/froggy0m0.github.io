@@ -4,5 +4,5 @@ title: Memo
 permalink: 'categories/Memo'
 order: 
 description: >
-  Memo
+  지극히 개인적인 메모들...
 ---
