@@ -13,7 +13,7 @@ title: About
 + +메모?
 
 <div style="padding-bottom:2rem">
-  <h6 style="margin:100px 0px 50px 0px; padding-bottom:10px; font-size:45px; font-family:'Jua', serif; font-weight:bold; letter-spacing: 1px; border-bottom:2px solid #eeeeee">Related posts　　　　　　　　　　　　　</h6>
+  <h6 style="margin:100px 0px 50px 0px; padding-bottom:10px; font-size:45px; font-family:'Jua', serif; font-weight:bold; letter-spacing: 1px; border-bottom:2px solid #eeeeee">posts　　　　　　　　　　　　　　　　</h6>
   <ul class="related-posts">
     {% for post in site.categories['Pwnable'] limit:5 %}
       <li>
