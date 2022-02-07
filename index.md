@@ -11,3 +11,21 @@ title: About
 
   
 
++ +메모?
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    {% for post in site.categories['Pwnable'] limit:5 %}
+      <li>
+        <h5>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small class="font-date">{{ post.date | date : "%Y.%m.%d" }}</small>
+          </a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
