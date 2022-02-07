@@ -19,7 +19,7 @@ title: About
   <ul class="related-posts">
     {% for post in site.categories['Pwnable'] limit:5 %}
       <li>
-        <h5>
+        <h5 class="post-contents">
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
             <small class="font-date">{{ post.date | date : "%Y.%m.%d" }}</small>
