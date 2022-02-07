@@ -11,5 +11,3 @@ title: About
 
   
 
-+ +메모?
-
