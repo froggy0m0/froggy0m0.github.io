@@ -16,8 +16,8 @@ $ gcc -z norelro 			# No RELRO
 ### CANARY
 
 ```bash
-$ gcc -fno-stack-protector	# CANARY 설정
-$ gcc -fstack-protector		# CANARY 해제
+$ gcc -fstack-protector		# CANARY보호 설정
+$ gcc -fno-stack-protector	# CANARY보호 해제
 ```
 
 ## NX
