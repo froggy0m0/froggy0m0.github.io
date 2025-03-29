@@ -10,7 +10,7 @@ mermaid: true
 image:
   path: /assets/img/20240709/detached_entity/simulation.gif
   alt: simulation
-
+  show_in_content: true
 ---
 
 
