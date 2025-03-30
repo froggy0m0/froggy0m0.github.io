@@ -8,3 +8,13 @@
 ';
 
 /* append your custom style below */
+.content {
+  font-size: 1.10rem;
+  line-height: 1.8rem;
+  word-spacing: 0.20em;
+}
+
+
+html[data-mode="dark"] body {
+  --text-color: #c9c9c9;
+}
