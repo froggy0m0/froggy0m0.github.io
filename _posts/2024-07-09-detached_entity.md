@@ -322,13 +322,18 @@ public void preHandle(WebRequest request) throws DataAccessException {
 
 
 
-#### **OSIV의 EntityManager 얻기**
+#### 트랜잭션에서 사용할 EntityManager 바인딩
 
 다음은 OSIV(Open Session in View)  Thread에 바인딩 된 트랜잭션을 얻는 과정이다.
 
+다음은 `JpaTransactionManager` 내부에서 **현재 Thread에 바인딩된 `EntityManager`를 획득**하고,
+**해당 트랜잭션에서 사용할 `EntityManager`로 지정하기 위해** 트랜잭션 관리 객체에 등록하는 과정이다.
+
 ```java
 protected Object doGetTransaction() {
-    ...
+    // 트랜잭션 관리 객체(JpaTransactionObject)를 생성한다.
+	JpaTransactionObject txObject = new JpaTransactionObject();
+    
     // Thread에 바인딩한 EntityManager를 꺼낸다.
     EntityManagerHolder emHolder = (EntityManagerHolder)TransactionSynchronizationManager
         .getResource(this.obtainEntityManagerFactory());
@@ -337,7 +342,7 @@ protected Object doGetTransaction() {
             this.logger.debug("Found thread-bound EntityManager [" + emHolder.getEntityManager() + "] for JPA transaction");
         }
 
-        // 트랜잭션 관리 객체에 EntityManager를 설정해 준다.
+        // 트랜잭션 관리 객체에 EntityManager를 바인딩 한다.
         txObject.setEntityManagerHolder(emHolder, false);
     }
     
@@ -348,8 +353,9 @@ protected Object doGetTransaction() {
 
 
 
-1. Thread에  EntityManager를 가져옴
-3. 트랜잭션 관리 객체에 EntityManager설정
+1. 트랜잭션 관리 객체를 생성한다.
+2. Thread에 바인딩 된  EntityManager를 가져온다.
+3. 트랜잭션 관리 객체에 EntityManager 바인딩 한다
 
 
 
