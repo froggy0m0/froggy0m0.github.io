@@ -26,7 +26,7 @@ mermaid: true
 - `server.port`
 - `spring.datasource.url`
 
-그럼 실제로 프로퍼티 주입이 어떻게 동작하는지 확인해보겠다.
+그럼 실제로 프로퍼티 주입이 어떻게 동작하는지 확인해 보겠다.
 
 ## 스프링의 프로퍼티 주입 예제
 아래 예제는 @Value로 프로퍼티 값을 컨트롤러에 주입한 뒤, REST API로 조회하는 간단한 예제이다.
@@ -39,7 +39,7 @@ properties, yml 파일에 키:값을 등록해 두면, 스프링을 통해 해�
 ### 2) 컨트롤러 코드 작성
 ![코드](/assets/img/20250604/spring_environment_flow_1/use_case_2.png)
     _값을 주입받는 예제 코드_
-`@Value("${test.value}")`를 사용해 프로퍼티 값을 주입받는다.
+`@Value("${test.value}")`를 사용해 프로퍼티 값을 해당 필드에 주입 받을 준비를 마쳤다.
 
 ###  3) 실행 결과
 ![실행 결과](/assets/img/20250604/spring_environment_flow_1/use_case_3.png)
@@ -86,14 +86,14 @@ properties, yml 파일에 키:값을 등록해 두면, 스프링을 통해 해�
    > **`ConfigurableEnvironment`**·**`ApplicationContext`** 생성, Bean 등록 및 초기화 작업 등을 수행한다.
    {: .prompt-info }
 
-   SpringApplication의 실행 초기에 **`prepareEnvironment()`**를 실행하여 **`ConfigurableEnvironment`**를 생성한다. 생성된 **`ConfigurableEnvironment`**는 **`ApplicationContext`**에 바인딩 되어, Bean 초기화 시 프로퍼티 값을 주입할 준비를 마친게 된다.
+   SpringApplication의 실행 초기에 **`prepareEnvironment()`**를 실행하여 **`ConfigurableEnvironment`**를 생성한다. 생성된 **`ConfigurableEnvironment`**는 **`ApplicationContext`**에 바인딩 되어, Bean 초기화 시 프로퍼티 값을 주입할 준비를 마치게 된다.
 
-**`ConfigurableEnvironment`**는 프로퍼티를 관리하는 저장소로, 필요한 프로퍼티를 조회할 수 있는 핵심 역할을 한다. 이를 초기화하는 **`prepareEnvironment()`** 메서드가 어떻게 동작하는지 살펴보자.
+**`ConfigurableEnvironment`**는 프로퍼티를 관리하는 저장소로, 필요한 프로퍼티를 조회할 수 있는 핵심 역할을 수행한다. 다음으로 **`ConfigurableEnvironment`**를 생성하는 **`prepareEnvironment()`** 메서드가 어떻게 동작하는지 살펴보자.
 
 ​      
 
 ### **2. Environment 생성 및 PropertySource 등록 과정**
-자세히 들어가기에 앞서, 아래 다이어그램은 **`prepareEnvironment()`** 호출 이후 **`ConfigurableEnvironment`**가 단계별로 구성되는 흐름을 시각화한 것이다.
+자세히 들어가기에 앞서, 아래 다이어그램은 **`prepareEnvironment()`** 호출 이후 **`ConfigurableEnvironment`**의 구성 흐름을 단계별로 정리하였다.
 ```mermaid
 flowchart TB
    A["1. prepareEnvironment()"] --> B1["2. ConfigurableEnvironment 인스턴스 생성"]
@@ -120,7 +120,7 @@ flowchart TB
 {: .prompt-info }
 
 
-생성된 **Environment** 인스턴스는 이후 애플리케이션 전체에서 구성 정보를 관리하고, 프로퍼티 값을 읽어오는 핵심 역할을 담당하게 된다. 구체적으로 어떤 구조와 책임을 가지는지 살펴보면 다음과 같다.
+생성된 **Environment** 인스턴스는 이후 애플리케이션 전체에서 구성 정보를 관리하고, 프로퍼티 값을 조회하는 핵심 역할을 담당하게 된다. 구체적으로 어떤 구조와 책임을 가지는지 살펴보면 다음과 같다.
 
 ##### **Environment의 역할**
 - propertySources를 관리  
@@ -159,22 +159,22 @@ Environment 생성자 내부에서는  **JVM 시스템 프로퍼티와 OS 환경
       - 프로퍼티 파일의 메타정보(경로·우선순위 등) 수집  
 
    2. _**프로퍼티 파일 로드 (Load)**_
-      - Resolve 결과(메타정보) 목록을 바탕으로 `.properties`/`.yml` 파일을 실제로 읽기 
+      - Resolve 결과(메타정보) 목록을 바탕으로 `.properties`/`.yml` 파일을 로드
       - PropertySourceLoader를 통해 읽어 들인 값을 `PropertySource` 객체로 생성하여 반환
 
 ##### (2). **Load한 결과를 Environment에 반영** - _ConfigDataEnvironment#applyToEnvironment()_
    - (1) _프로퍼티 파일 Resolve & Load_ 에서 생성된 `PropertySource` 목록을 순서대로 `Environment.MutablePropertySources`에 추가  
    - 최종적으로 모든 프로퍼티가 `Environment`에 등록됨
 
-이 과정을 통해 모든 프로퍼티 소스가 병합되어, 최종 `Environment` 객체에 반영된다.
+이 과정을 통해 모든 `PropertySource`가 병합되어 최종적으로 `Environment`의 `MutablePropertySources`에 추가된다.
 
 ​    
 
 
 ### **4. 최종 Environment 반환 및 Context 바인딩**
 
-- 반환된 `Environment`는 이후 `SpringApplication.run()` 내부 `prepareContext(...)`에서 `ApplicationContext`에 바인딩 되어,
-  빈 생성 시점에 `@Value`나 `@ConfigurationProperties` 등으로 참조할 수 있도록 준비한다.
+- 반환된 `Environment`는  Spring Boot 애플리케이션 진입점인 `SpringApplication.run()`의 `prepareContext(...)` 단계에서 `ApplicationContext`에 바인딩 되어,
+  Bean 생성 시점에 `@Value`나 `@ConfigurationProperties` 등으로 참조할 수 있도록 준비한다.
 
      ```
      context.setEnvironment(environment);
