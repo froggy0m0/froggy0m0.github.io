@@ -174,7 +174,7 @@ Environment 생성자 내부에서는  **JVM 시스템 프로퍼티와 OS 환경
 ### **4. 최종 Environment 반환 및 Context 바인딩**
 
 - 반환된 `Environment`는  Spring Boot 애플리케이션 진입점인 `SpringApplication.run()`의 `prepareContext(...)` 단계에서 `ApplicationContext`에 바인딩 되어,
-  Bean 생성 시점에 `@Value`나 `@ConfigurationProperties` 등으로 참조할 수 있도록 준비한다.
+  Bean 생성 시점에 `@Value`, `@ConfigurationProperties` 등으로 참조할 수 있도록 준비한다.
 
      ```
      context.setEnvironment(environment);
