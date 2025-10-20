@@ -22,7 +22,7 @@ mermaid: true
 
 `application.properties`나 `application.yml` 등에 정의된 키·값을 런타임 시점에 빈(Bean)으로 주입할 수 있도록 지원하는 기능이다.
 
-주로 사용되는 프로퍼티는 다음과 같다.:
+주로 사용되는 프로퍼티는 다음과 같다.
 - `server.port`
 - `spring.datasource.url`
 
