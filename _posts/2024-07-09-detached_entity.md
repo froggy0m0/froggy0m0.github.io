@@ -31,9 +31,13 @@ image:
 
 ![Process](/assets/img/20240709/detached_entity/process.png)
 
-기존에는 REST API의 POST 요청을 통해 데이터를 전송하였다.
+기존에는 IoT가 HTTP로 데이터를 전송하면 **Controller → Service 흐름**으로 처리되었다.
 
-**MQTT 프로토콜로 변환**하면서 **기존의 Controller 메소드를 호출하여 재사용**하였다.
+**MQTT 도입 후에는 MQTT Message Handler가 데이터를 먼저 수신하고, 이를 기존 Controller를 직접 호출하는 방식으로 구성하여 기존 로직을 그대로 재사용했다. (MQTT Message Handler -> Controller -> Service)**
+
+
+
+이 구조 변경 과정에서 JPA Detached Entity 오류가 발생하였다.
 
 ---
 
